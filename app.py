@@ -67,12 +67,12 @@ def api_login():
     except Exception as e:
         return jsonify({"message": f"Error: {str(e)}"}), 500
 
-if __name__ == '__main__':
-    app.run(debug=True)
+
 
 @app.route('/activity')
 def activity():
     return render_template('activity.html')
 
-if __name__ == "__main__":
-    app.run()
+if __name__ == '__main__':
+    app.run(debug=True)
+
