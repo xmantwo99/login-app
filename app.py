@@ -74,3 +74,5 @@ if __name__ == '__main__':
 def activity():
     return render_template('activity.html')
 
+if __name__ == "__main__":
+    app.run()
